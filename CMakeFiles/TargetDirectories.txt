@@ -1,0 +1,3 @@
+/Users/mlg/Documents/A-project/CPP/NeuralNetwork/CMakeFiles/neuralnetwork.dir
+/Users/mlg/Documents/A-project/CPP/NeuralNetwork/CMakeFiles/edit_cache.dir
+/Users/mlg/Documents/A-project/CPP/NeuralNetwork/CMakeFiles/rebuild_cache.dir
