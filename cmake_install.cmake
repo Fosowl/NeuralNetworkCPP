@@ -1,4 +1,4 @@
-# Install script for directory: /Users/mlg/Documents/A-project/CPP/NeuralNetwork
+# Install script for directory: /Users/mlg/Documents/A-project/CPP/NeuralNetworkCPP
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/mlg/Documents/A-project/CPP/NeuralNetwork/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/mlg/Documents/A-project/CPP/NeuralNetworkCPP/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

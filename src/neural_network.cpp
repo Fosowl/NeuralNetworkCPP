@@ -22,7 +22,7 @@ void NeuralNetwork::forwardPropagation(std::vector<float> inputs)
         ERROR("Bad input size for forward propagation")
         return;
     }
-    for (auto layer : layers) {
+    for (auto& layer : layers) {
         inputs = layer.forwardPropagate(inputs);
     }
     modelOutputs = inputs;
@@ -86,7 +86,7 @@ void NeuralNetwork::backPropagation(std::vector<float> predicted, std::vector<fl
 
     // compute gradient of costs (error)
     std::vector<float> prev_gradients = costGradient(predicted, expectation);
-    for (Layer layer : backward_layers) {
+    for (auto& layer : backward_layers) {
         // get local gradients for layer
         gradients = layer.computeGradients();
         // chain rule 

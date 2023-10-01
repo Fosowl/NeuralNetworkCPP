@@ -16,7 +16,8 @@ void Layer::initializeNeurons(int numNeurons, int numInputs)
 
 std::vector<float> Layer::forwardPropagate(std::vector<float> inputs)
 {
-    for (Neuron n : neurons) {
+    neurons_output.clear();
+    for (Neuron& n : neurons) {
         float z = n.compute(inputs);
         neurons_output.push_back(z);
     }

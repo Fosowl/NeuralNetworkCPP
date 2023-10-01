@@ -26,17 +26,18 @@ void Neuron::initializeWeight(int weightCount)
 
 float Neuron::sigmoidDerivative(float z)
 {
-    return std::exp(-z) / std::pow(1 - std::exp(-z), 2);
+    float sigmoid_value = sigmoid(z);
+    return sigmoid_value * (1 - sigmoid_value);
 }
 
 float Neuron::compute(std::vector<float> inputs)
 {
-    int y = 0;
+    float y = 0.0f;
     for (int i = 0; i < inputs.size(); i++) {
         y += inputs[i] * weights[i];
     }
     float z = sigmoid(y + bias);
-    float output = z;
+    this->output = z;
     return z;
 }
 
